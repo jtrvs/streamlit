@@ -6,6 +6,71 @@ from Bio.Seq import Seq
 from Bio import SeqIO
 import io
 
+# st.markdown("""
+#     <style>
+#         /* Основной фон (тёмный режим) */
+#         .stApp {
+#             background: linear-gradient(135deg, #1a472a 0%, #0d2818 100%);
+#         }
+        
+#         /* Карточки метрик */
+#         [data-testid="stMetric"] {
+#             background: rgba(255,255,255,0.1);
+#             border-radius: 15px;
+#             padding: 15px;
+#             border: 1px solid rgba(255,255,255,0.2);
+#             backdrop-filter: blur(10px);
+#         }
+        
+#         /* Заголовки */
+#         h1 {
+#             color: #4ade80 !important;
+#             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+#             font-family: 'Courier New', monospace !important;
+#         }
+        
+#         h2, h3 {
+#             color: #86efac !important;
+#         }
+        
+#         /* Текст в метриках */
+#         [data-testid="stMetricValue"] {
+#             color: #fbbf24 !important;
+#             font-size: 2rem !important;
+#         }
+        
+#         /* Кнопки */
+#         .stButton > button {
+#             background: linear-gradient(90deg, #10b981, #059669);
+#             color: white;
+#             border: none;
+#             border-radius: 25px;
+#             padding: 10px 25px;
+#             font-weight: bold;
+#             transition: all 0.3s;
+#         }
+        
+#         .stButton > button:hover {
+#             transform: scale(1.05);
+#             box-shadow: 0 0 15px rgba(16,185,129,0.5);
+#         }
+        
+#         /* Текстовое поле (аналог гелевой электрофореза) */
+#         .stTextArea textarea {
+#             background: #1e1e1e;
+#             color: #10b981;
+#             font-family: 'Monaco', 'Courier New', monospace;
+#             border: 2px solid #10b981;
+#             border-radius: 10px;
+#         }
+        
+#         /* Прогресс-бары (для анализа) */
+#         .stProgress > div > div {
+#             background: linear-gradient(90deg, #10b981, #3b82f6);
+#         }
+#     </style>
+# """, unsafe_allow_html=True)
+
 st.title("🧬 Анализатор белковых последовательностей")
 st.markdown("Введите последовательность белка в формате FASTA или просто вставьте текст:")
 
